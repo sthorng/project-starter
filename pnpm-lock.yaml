@@ -103,9 +103,17 @@ importers:
 
   apps/server:
     specifiers:
+      '@types/node': ^17.0.4
       fastify: ^3.25.1
+      prisma: ^3.7.0
+      ts-node: ^10.4.0
+      typescript: ~4.1.5
     dependencies:
+      '@types/node': 17.0.4
       fastify: 3.25.1
+      prisma: 3.7.0
+      ts-node: 10.4.0_b1a2b3427ee18b97a3d311570d964b05
+      typescript: 4.1.6
 
   utils:
     specifiers:
@@ -2893,6 +2901,11 @@ packages:
     dependencies:
       mkdirp: 1.0.4
       rimraf: 3.0.2
+    dev: false
+
+  /@prisma/engines/3.7.0-31.8746e055198f517658c08a0c426c7eec87f5a85f:
+    resolution: {integrity: sha512-W549ub5NlgexNhR8EFstA/UwAWq3Zq0w9aNkraqsozVCt2CsX+lK4TK7IW5OZVSnxHwRjrgEAt3r9yPy8nZQRg==}
+    requiresBuild: true
     dev: false
 
   /@purest/config/1.0.1:
@@ -14650,6 +14663,15 @@ packages:
       extend-shallow: 2.0.1
       js-beautify: 1.14.0
     dev: true
+
+  /prisma/3.7.0:
+    resolution: {integrity: sha512-pzgc95msPLcCHqOli7Hnabu/GRfSGSUWl5s2P6N13T/rgMB+NNeKbxCmzQiZT2yLOeLEPivV6YrW1oeQIwJxcg==}
+    engines: {node: '>=12.6'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 3.7.0-31.8746e055198f517658c08a0c426c7eec87f5a85f
+    dev: false
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
